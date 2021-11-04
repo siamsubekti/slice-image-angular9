@@ -1,0 +1,41 @@
+.group-parent-activity {
+  height: 28.6rem;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.group-img-activity {
+  max-width: fit-content;
+}
+.group-desc-activity {
+  flex-wrap: wrap;
+  max-width: 75%;
+}
+.img-activity {
+  width: 5rem!important;
+}
+.text-desc-trun {
+  display: block;
+  width: 75%;
+}
+.mb-4px {
+  margin-bottom: 4px;
+}
+
+@media (max-width: 1199px) {
+  .group-parent-activity {
+    height: 24rem;
+  }
+}
+@media (max-width: 991px) {
+  .group-parent-activity {
+    display: flex;
+    height: fit-content;
+    overflow-x: auto;
+  }
+  .group-desc-activity {
+    max-width: 100%;
+  }
+  .text-desc-trun {
+    width: 15rem;
+  }
+}

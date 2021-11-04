@@ -1,0 +1,20 @@
+@import '../videos/videos.component';
+
+.group-peoples:nth-child(1) {
+  padding-top: 0;
+  padding-right: 4px;
+}
+.group-peoples:nth-child(2) {
+  padding-right: 15px!important;
+  padding-left: 4px;
+  padding-top: 0;
+}
+.group-peoples:nth-child(3) {
+  padding-right: 4px;
+  padding-top: 4px;
+}
+.group-peoples:nth-child(4) {
+  padding-right: 15px!important;
+  padding-left: 4px;
+  padding-top: 4px;
+}

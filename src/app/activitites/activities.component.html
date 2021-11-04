@@ -1,0 +1,27 @@
+<div class="row mt-lg-5 m-0 px-lg-3">
+  <div class="col-12 px-0">
+    <div class="col-12 col-md-6 col-lg-12 px-0 d-flex justify-content-between flex-wrap align-items-end">
+      <h5 class="mb-0">Activity</h5>
+      <p class="mb-0">view timeline</p>
+    </div>
+    <hr class="mt-2"/>
+  </div>
+  <div class="col-12 px-0 group-parent-activity">
+    <div class="group-activity mb-2 d-flex" *ngFor="let activity of activities">
+      <div class="col group-img-activity px-0">
+        <img class="img-activity w-100" src="{{ activity.image }}" alt="#">
+      </div>
+      <div class="col group-desc-activity">
+        <span class="d-flex flex-wrap">
+          <strong class="mr-2">{{ activity.name }}</strong> <span class="mb-0 font-italic">{{ activity.action }}</span>
+        </span>
+        <span class="text-truncate text-desc-trun">{{ activity.description }}</span>
+        <span class="d-flex align-items-center">
+          <i class="fas fa-{{ activity.icon }} mr-1 mb-4px"></i>
+          <span class="mb-0">{{ activity.time }}</span>
+        </span>
+      </div>
+    </div>
+  </div>
+
+</div>
